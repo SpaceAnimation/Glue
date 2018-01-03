@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour {
 		z = Input.GetAxis ("Vertical") * Time.deltaTime * 3.0f;
 
 		energySource.gameObject.transform.Rotate (0, x, 0);
-		player.gameObject.transform.Translate (0, 0, z);
+		energySource.gameObject.transform.Translate (0, 0, z);
 	}
 
 	void FixedUpdate()
