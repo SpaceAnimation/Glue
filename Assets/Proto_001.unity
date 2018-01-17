@@ -143,8 +143,10 @@ MonoBehaviour:
   player: {fileID: 47928139}
   energySource: {fileID: 788518517}
   driver: {fileID: 864124045}
+  velocity: {x: 0, y: 0, z: 0}
+  MAXSPEED: 10
   x: 0
-  z: 0
+  z: {x: 0, y: 0, z: 0}
 --- !u!4 &47928141
 Transform:
   m_ObjectHideFlags: 0
@@ -531,5 +533,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 788518516}
+  velocity: {x: 0, y: 0, z: 0}
   smoothSpeed: 0.125
   offset: {x: 0, y: 4, z: -10.5}
