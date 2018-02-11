@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour {
 		z.z = Input.GetAxis ("Vertical") * Time.deltaTime;//* 3.0f;
 		if(z.z < MAXSPEED)
 			velocity += z;
-
+		if(vel
 		energySource.gameObject.transform.Rotate (0, x, 0);
 		energySource.gameObject.transform.Translate (velocity);
 	}
