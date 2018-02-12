@@ -20,6 +20,7 @@ public class Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
 		x = Input.GetAxis ("Horizontal") * Time.deltaTime * 150.0f;
 		z.z = Input.GetAxis ("Vertical") * Time.deltaTime;//* 3.0f;
 		if(z.z < MAXSPEED)
